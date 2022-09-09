@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="tab">
+    <button id ="datecalc" class="tablinks">Калькулятор дат</button>
+    <button id ="time" class="tablinks">Таймер</button>
+  </div>
+
+  <div id="tab-datecalc" class="tabcontent">
+    <form id="datecalc-form">
+      <h3>Калькулятор дат</h3>
+      <label>
+          <strong>Первая дата:</strong>
+          <input type="date" name="firstDate" />
+      </label>
+      <label>
+          <strong>Вторая дата:</strong>
+          <input type="date" name="secondDate" />
+      </label>
+      <button type="submit">Расчитать промежуток</button>
+      <p id="datecalc__result"></p>
+    </form> 
+  </div>
+  <div id="tab-time" class="tabcontent">
+    <p>Введите время в минутах</p>
+    <input type="text" name="time" id="input-time">
+    <p id="timer">00:00:00</p>
+    <button id="button-start">Старт</button>
+    <button id="button-stop">Стор</button>
+  </div>
+</body>
+</html>
