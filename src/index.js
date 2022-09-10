@@ -3,7 +3,7 @@ import getDateDiff from './js/getDateDiff.js';
 import { openTab } from './js/openTab.js';
 import stratTimer from './js/stratTimer.js';
 
-import './styles/style.css'
+import './style.scss'
 
 const tabs = document.querySelector('.tab')
 tabs.addEventListener('click', openTab)
