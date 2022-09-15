@@ -12,7 +12,6 @@ export const openTab = (event) => {
     }
 
     const tabId = event.target.getAttribute('id');
-    console.log(tabId);
     const tab = document.getElementById(`tab-${tabId}`);
     event.target.classList.add('tab-active');
     tab.style.display = 'block';
