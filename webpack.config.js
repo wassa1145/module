@@ -33,11 +33,9 @@ module.exports = {
         use: ['file-loader']
       },
       {
-        test: /\.mp3$/,
-        loader: 'file-loader',
-        options: {
-          name: 'sound/[name].[ext]'
-        }
+        test: /\.mp3/,
+        type: 'asset/resource'
+      }
       }
     ]
   }
