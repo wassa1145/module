@@ -1,5 +1,6 @@
 import { printTime } from './printResult.js';
 import { Howl } from 'howler';
+import soundSrc from '../audio/zvonok.mp3';
 
 const stratTimer = (timeMinut) => {
 	return setInterval(function () {
@@ -8,10 +9,7 @@ const stratTimer = (timeMinut) => {
 		let hour = timeMinut / 60 / 60 % 60;
     
 		const sound = new Howl({
-			src: ['./audio/zvonok.mp3'],
-			volume: 1,
-			html5: true,
-			format: ['mp3']
+			src: [soundSrc]
 		});
 
 		if (timeMinut < 3) {
